@@ -4,8 +4,9 @@ apscore = []
 with open("placement_readiness.csv", "r", encoding="utf-8") as f:
     reader = csv.DictReader(f)
     for row in reader:
-        pyscore.append(int(row[2]))
-        apscore.append(int(row[4]))
+        pyscore.append(int(row["Python_Score"]))
+        apscore.append(int(row["Aptitude_Score"]))
+    
 #pyscore = pyscore[:7]
 total_python = sum(pyscore)
 average_python = total_python //len(pyscore)
