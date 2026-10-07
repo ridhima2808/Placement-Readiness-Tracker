@@ -34,3 +34,5 @@ max_Count_id = counts.idxmax()
 max_count = counts.max()
 print(counts)
 print(max_Count_id," ",max_count)
+
+df.to_csv('placement_readiness.csv', index=False)
